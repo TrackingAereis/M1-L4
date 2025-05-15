@@ -27,4 +27,4 @@ async def on_message(message):
     else:
         await message.channel.send("Password kamu " + gen_pass(10))
 
-client.run("MTM2ODIwNzMxNTQyOTQ5NDc5NA.GtI75A.poGXjyl8YBRs4H2qBYv4Uy41bokEjIiqNMwRIg")
+client.run("")

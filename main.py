@@ -14,12 +14,30 @@ async def on_ready():
 @bot.command()
 async def hello(ctx):
     await ctx.send(f'Hai! Saya adalah bot {bot.user}!')
+
 @bot.command()
 async def senyum(ctx):
     await ctx.send(gen_emoji())
 
 @bot.command()
+async def koin(ctx):
+    await ctx.send(flip_coin())
+
+@bot.command()
+async def warna(ctx):
+    await ctx.send(gen_color())
+
+@bot.command()
+async def heart(ctx):
+    await ctx.send("❤️❤️❤️")
+
+@bot.command()
 async def pasw(ctx):
     await ctx.send(gen_pass(10))
 
-bot.run("MTM2ODIwNzMxNTQyOTQ5NDc5NA.GtI75A.poGXjyl8YBRs4H2qBYv4Uy41bokEjIiqNMwRIg")
+@bot.command()
+async def tolong(ctx):
+    await ctx.send('Commands : $hello, $senyum, $koin, $warna, $heart, $pasw')
+
+
+bot.run("")
